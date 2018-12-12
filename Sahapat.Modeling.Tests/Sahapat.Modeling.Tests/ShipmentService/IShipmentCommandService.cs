@@ -8,6 +8,6 @@ namespace Sahapat.Modeling.Tests.ShipmentService
 {
     public interface IShipmentCommandService
     {
-        ReceivedPackagingContentResult ReceivedPackagingContent(Guid contentId, Guid productId, double quantityRejected);
+        ReceivedPackagingContentResult ReceivedPackagingContent(Guid packagingContentId, Guid productId, double quantityRejected);
     }
 }

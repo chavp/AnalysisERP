@@ -10,8 +10,8 @@ namespace Sahapat.Modeling.Tests.PartiesService.DTOs
     {
         public Guid PartyId { get; set; }
 
-        public string PartyType { get; set; }
-        public string PartyRole { get; set; }
+        public string PartyTypeName { get; set; }
+        public string PartyRoleName { get; set; }
 
         public PersonDTO Person { get; set; }
         public PersonDTO OrganizationDTO { get; set; }

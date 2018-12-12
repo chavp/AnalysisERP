@@ -49,12 +49,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BillTDTO.cs" />
+    <Compile Include="Note.cs" />
+    <Compile Include="InventoriesService\DTOs\TransferShipmentsCommandDTO.cs" />
     <Compile Include="InventoriesService\IInventoriesComandService.cs" />
+    <Compile Include="InventoriesService\IInventoriesQueryService.cs" />
     <Compile Include="InventoriesService\IInventoriesService.cs" />
     <Compile Include="Inventories\InventoryItem.cs" />
     <Compile Include="Inventories\InventorytItemShipmentReceipt.cs" />
-    <Compile Include="Inventories\Repositories\IInventorytItemShipmentReceiptRepository.cs" />
+    <Compile Include="Inventories\Repositories\IInventoriesRepository.cs" />
     <Compile Include="Models\Entity.cs" />
     <Compile Include="OrdersService\DTOs\OrderDTO.cs" />
     <Compile Include="OrdersService\DTOs\OrderItemDTO.cs" />
@@ -76,8 +78,12 @@
     <Compile Include="Parties\PartyRole.cs" />
     <Compile Include="Parties\PartyRoleType.cs" />
     <Compile Include="Parties\Repositories\PartyRepository.cs" />
+    <Compile Include="ProductsService\DTOs\ProductDTO.cs" />
+    <Compile Include="ProductsService\IProductsCommandService.cs" />
+    <Compile Include="ProductsService\IProductsService.cs" />
     <Compile Include="Products\Goods.cs" />
     <Compile Include="Products\Product.cs" />
+    <Compile Include="Products\Repositories\IProductRepository.cs" />
     <Compile Include="Products\Service.cs" />
     <Compile Include="Products\UnitOfMesure.cs" />
     <Compile Include="Products\Dimension.cs" />
@@ -88,8 +94,10 @@
     <Compile Include="ShipmentService\DTOs\ShipmentReceiptDTO.cs" />
     <Compile Include="ShipmentService\IShipmentQueryService.cs" />
     <Compile Include="ShipmentService\IShipmentService.cs" />
+    <Compile Include="Shipments\Factories\IShipmentReceiptFactory.cs" />
     <Compile Include="Shipments\OrderShipment.cs" />
     <Compile Include="Shipments\PackagingContent.cs" />
+    <Compile Include="Shipments\Repositories\IPackagingContentRepository.cs" />
     <Compile Include="Shipments\Repositories\IShipmentPackageRepository.cs" />
     <Compile Include="Shipments\Repositories\IShipmentReceiptRepository.cs" />
     <Compile Include="Shipments\Shipment.cs" />
@@ -101,13 +109,14 @@
     <Compile Include="ProductServiceTest.cs" />
     <Compile Include="OrganizationServiceTest.cs" />
     <Compile Include="Shipments\ShipmentReceipt.cs" />
+    <Compile Include="ShipmentsServiceTest.cs" />
+    <Compile Include="StockAppService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Infrastructure\" />
-    <Folder Include="Shipments\Factories\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

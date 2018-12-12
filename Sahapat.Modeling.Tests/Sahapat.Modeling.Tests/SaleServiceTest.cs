@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sahapat.Modeling.Tests.ProductsService.DTOs;
 
 namespace Sahapat.Modeling.Tests
 {
@@ -25,16 +26,6 @@ namespace Sahapat.Modeling.Tests
         public CustomerDTO BillTo { get; set; }
 
         public ProductDTO Product { get; set; }
-    }
-
-    public class ProductDTO
-    {
-        public string Code { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string UnitDescription { get; set; }
-
-        public double Price { get; set; }
     }
 
     public class CustomerDTO

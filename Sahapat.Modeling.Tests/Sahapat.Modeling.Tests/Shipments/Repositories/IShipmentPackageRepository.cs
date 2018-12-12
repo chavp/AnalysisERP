@@ -9,6 +9,5 @@ namespace Sahapat.Modeling.Tests.Shipments.Repositories
     public interface IShipmentPackageRepository
     {
         List<ShipmentPackage> GetShipmentPackagesByOrderCode(string orderCode);
-
     }
 }
